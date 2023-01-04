@@ -23,16 +23,7 @@ public class WeatherController {
     public int test() {
         return 2;
     }
-    /*@GetMapping("/weather")
-    public String weather() {
-        WeatherInfo essa = new WeatherInfo();
-        try {
-            essa = convertToJavaFromJson(getApiResponse("Warsaw", GettingApiRequests.privateKey));
-        } catch (JsonProcessingException e) {
-            throw new RuntimeException(e);
-        }
-        return "es";
-    }*/
+
     @GetMapping("weather")
     public String weatherForAllCities() {
         StringBuilder sb = new StringBuilder();

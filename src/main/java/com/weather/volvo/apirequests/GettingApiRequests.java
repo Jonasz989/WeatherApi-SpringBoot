@@ -2,8 +2,6 @@ package com.weather.volvo.apirequests;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
-import com.weather.volvo.parser.Parser;
-import com.weather.volvo.weatherdto.WeatherInfoDTO;
 import com.weather.volvo.weatherinfo.WeatherInfo;
 
 import java.io.BufferedReader;
@@ -25,7 +23,7 @@ public class GettingApiRequests {
 
 
     //main for testing usages
-    public static void main(String[] args) {
+    /*public static void main(String[] args) {
 
         for (String city : cities) {
             //WeatherInfo essa = convertToJavaFromJson(getApiResponse(city, privateKey));
@@ -52,14 +50,14 @@ public class GettingApiRequests {
 
         }
         //getApiResponse("Warsaw", privateKey);
-        /*try {
+        *//*try {
             convertToJavaFromJson(getApiResponse("Warsaw", privateKey));
         } catch (JsonProcessingException e) {
             throw new RuntimeException(e);
-        }*/
+        }*//*
 
 
-    }
+    }*/
 
     /*public static String getApiResponse(String city, String privateKey) {
 
@@ -216,6 +214,4 @@ public class GettingApiRequests {
     public static String getPrivateKey() {
         return privateKey;
     }
-
-
 }
